@@ -14,9 +14,8 @@
             <input type="text" name="nome_usuario">
             <label >Senha</label>
             <input type="password" name="senha_usuario">
-            <input type="submit" value="Entrar">
+            <input type="submit" value="Entrar">   
         </form>
-
+    </body>
     </div>
-</body>
 </html>
