@@ -22,3 +22,5 @@ if(isset($_GET['teste'])){
 }
 echo '<br>';
 echo "Valor: $valor";
+
+
