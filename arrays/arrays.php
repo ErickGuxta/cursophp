@@ -24,6 +24,8 @@ $cidades = [
     ],
 ];
 
+
+
 echo '<pre>';
 print_r($cidades);
 echo '<pre>';

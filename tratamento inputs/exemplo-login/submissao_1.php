@@ -10,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 //vai buscar o nome do usuario e a senha
 
-
 $usuario=  isset($_POST['nome_usuario']) ? $_POST['nome_usuario'] : '';
 $senha=  isset($_POST['senha_usuario']) ? $_POST['senha_usuario'] : '';
 

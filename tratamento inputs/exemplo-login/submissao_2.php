@@ -44,7 +44,7 @@ $senha=  isset($_POST['senha_usuario']) ? trim($_POST['senha_usuario']) : '';
         <h1>LOGIN INVÁLIDO</h1>
     <?php endif; ?>
 
-    <a href="index1.php">Voltar</a>
+    <a href="index.php">Voltar</a>
 
 </body>
 

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="conteiner">
-        <form action="submissao_1.php" method="POST">
+        <form action="submissao_2.php" method="POST">
             <h3>LOGIN</h3>
             <label >Usuário</label>
             <input type="text" name="nome_usuario">

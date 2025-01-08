@@ -8,7 +8,7 @@ $vetor = [
 
 
 
-for ($i=1; $i <= count($vetor)  ; $i++) { 
+for ($i=1; $i <= count($vetor) ; $i++) { 
     echo $vetor[$i] . '</br>';
 }
 
