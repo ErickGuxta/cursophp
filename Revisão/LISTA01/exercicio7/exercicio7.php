@@ -17,55 +17,66 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['usuario'])) {
     $mensagemErro = null;
     
     //lanches
-    $nomesLanches = [
-        'x-wolverine' => 'X-Wolverine',
-        'magneto-supreme' => 'Magneto Supreme',
-        'jean-grey' => 'Jean Grey',
-        'super-tempestade' => 'Super Tempestade',
-        'x-mistiga' => 'X-Místiga',
-        'scott-prime' => 'Scott Prime'
-    ];
     $lanches = [
-        'x-wolverine' => ['preco' => 'R$ 25,90'],
-        'magneto-supreme' => ['preco' => 'R$ 23,50'],
-        'jean-grey' => ['preco' => 'R$ 22,90'],
-        'super-tempestade' => ['preco' => 'R$ 18,50'],
-        'x-mistiga' => ['preco' => 'R$ 89,90'],
-        'scott-prime' => ['preco' => 'R$ 27,90']
+        "1"=> [
+            "nome" => 'X-Wolverine',
+            "preco" => 'R$ 25,90'
+        ],
+        "2"=> [
+            "nome" => 'Magneto Supreme',
+            "preco" => 'R$ 23,50'
+        ],
+        "3"=> [
+            "nome" => 'Jean Grey',
+            "preco" => 'R$ 22,90'
+        ],
+        "4"=> [
+            "nome" => 'Super Tempestade',
+            "preco" => 'R$ 18,50'
+        ],
+        "5"=> [
+            "nome" => 'X-Místiga',
+            "preco" => 'R$ 89,90'
+        ],
+        "6"=> [
+            "nome" => 'Scott Prime',
+            "preco" => 'R$ 27,90'
+        ]
     ];
+
 
     if (isset($_POST['option'])) {
         $lancheEscolhido = $_POST['option'];
 
         switch ($lancheEscolhido) {
             case '1':
-                $nomeLanche = $nomesLanches['x-wolverine'];
-                $precoLanche = $lanches['x-wolverine']['preco'];
+                $nomeLanche = $lanches['1']['nome'];
+                $precoLanche = $lanches['1']['preco'];
                 break;
 
             case '2':
-                $nomeLanche = $nomesLanches['magneto-supreme'];
-                $precoLanche = $lanches['magneto-supreme']['preco'];
+                $nomeLanche = $lanches['2']['nome'];
+                $precoLanche = $lanches['2']['preco'];
                 break;
 
             case '3':
-                $nomeLanche = $nomesLanches['jean-grey'];
-                $precoLanche = $lanches['jean-grey']['preco'];
+                $nomeLanche = $lanches['3']['nome'];
+                $precoLanche = $lanches['3']['preco'];
                 break;
 
             case '4':
-                $nomeLanche = $nomesLanches['super-tempestade'];
-                $precoLanche = $lanches['super-tempestade']['preco'];
+                $nomeLanche = $lanches['4']['nome'];
+                $precoLanche = $lanches['4']['preco'];
                 break;
 
             case '5':
-                $nomeLanche = $nomesLanches['x-mistiga'];
-                $precoLanche = $lanches['x-mistiga']['preco'];
+                $nomeLanche = $lanches['5']['nome'];
+                $precoLanche = $lanches['5']['preco'];
                 break;
 
             case '6':
-                $nomeLanche = $nomesLanches['scott-prime'];
-                $precoLanche = $lanches['scott-prime']['preco'];
+                $nomeLanche = $lanches['6']['nome'];
+                $precoLanche = $lanches['6']['preco'];
                 break;
 
             default:
@@ -298,7 +309,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['usuario'])) {
         <?php endif; ?>
 
 
-    </div>
     </div>
 </body>
 
