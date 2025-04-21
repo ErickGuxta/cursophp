@@ -23,7 +23,7 @@ for ($i=0; $i<5; $i++) {
     $vet[] = $nome;
 }
 
-// Print all numbers
+// aqui é para imprimir todos os numeros 
 for ($i=0; $i<5; $i++) {
     echo $vet[$i] . " ";
 }
