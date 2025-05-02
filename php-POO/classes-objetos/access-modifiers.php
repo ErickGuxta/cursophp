@@ -1,5 +1,9 @@
 <?php
 
+// Tipos de access mofiers:
+// public
+// private
+// protected
 class Homem{
 
     // propriedade privada. O seu acesso não é possível sem ser dentro da classe
