@@ -16,6 +16,9 @@ abstract class Veiculo
     public function get_tipo(){
         return $this->tipo;
     }
+    public function get_ano(){
+        return $this->ano;
+    }
 }
 
 class Automovel extends Veiculo

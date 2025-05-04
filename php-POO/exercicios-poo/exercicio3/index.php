@@ -6,9 +6,10 @@ $veiculos = [];
 
 // carregar dados de um csv
 $arquivo = fopen('dados.csv', 'r');
-while (!feof($arquivo)) {
-    $linha = fgetcsv($arquivo);
-    switch ($linha[0]) {
+while (!feof($arquivo)) {  //enquanto não existir o final do ficheiro
+    $linha = fgetcsv($arquivo); //vai pegar cada linha do ficheiro
+
+    switch ($linha[0]) { 
         case 'automovel':
             $veiculos[] = new Automovel($linha);
             break;
