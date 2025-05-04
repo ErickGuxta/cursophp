@@ -26,3 +26,43 @@ dos objetos da coleção veiculos.
 Tudo isto dentro de um layout de HTML com um h1 para cada tipo de veiculo
 e uma lista não ordenada para cada frase.
 */
+class Veiculos
+{
+    protected $tipo;
+    protected $marca;
+    protected $ano;
+
+    function __construct($dado)
+    {
+        $this->tipo = $dado[0];
+        $this->marca = $dado[1];
+        $this->ano = $dado[2];
+    }
+
+    function get_tipo()
+    {
+        return $this->tipo;
+    }
+}
+
+class Automovel extends Veiculos
+{
+    function apresentar()
+    {
+        return "Este objeto guarda os dados de um automóvel da marca {$this->marca}, do ano {$this->ano}";
+    }
+}
+class Aviao extends Veiculos
+{
+    function apresentar()
+    {
+        return "Este objeto guarda os dados de um automóvel da marca {$this->marca}, do ano {$this->ano}";
+    }
+}
+class Barco extends Veiculos
+{
+    function apresentar()
+    {
+        return "Este objeto guarda os dados de um automóvel da marca {$this->marca}, do ano {$this->ano}";
+    }
+}

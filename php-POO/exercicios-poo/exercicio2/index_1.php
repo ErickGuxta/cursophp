@@ -31,23 +31,6 @@
          outros... desconhecido
 */
 
-$dados = [
-    ['m', 'João Ribeiro'],
-    ['f', 'Ana Silva'],
-    ['M', 'Carlos Martins'],
-    ['m', 'Joaquim Santos'],
-    ['f', 'Marta Rodrigues'],
-    ['M', 'Rui Fernandes'],
-    ['F', 'Márcia Antunes'],
-    ['g', 'Pantufa'],
-    ['f', 'Carla Maria'],
-    ['M', 'Fernando Joaquim'],
-    ['m', 'Ricardo Moita'],
-    ['c', 'Lassie'],
-    ['F', 'Daniela Cardoso'],
-    ['F', 'Susana Dinis'],
-];
-
 class Humanos
 {
    private $masculinos = [];
